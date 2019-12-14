@@ -1,0 +1,66 @@
+.modalLoginForm .show {
+  display: block;
+}
+
+.acount {
+  #conten {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-columns: minmax(20px, auto);
+
+    // max-width: 300px;
+    margin: 0 auto;
+
+    .one-login {
+      justify-self: center;
+      align-self: center;
+      align-items: stretch;
+      padding-left: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    h4 {
+      font-size: 14px;
+    }
+
+  }
+
+  .modalLoginForm .show {
+    display: block;
+  }
+
+  .acount {
+
+    #conten {
+      .one-login {
+        padding-left: 200px;
+      }
+
+
+
+    }
+  }
+}
+
+.soc_icons {
+  .list-unstyled {
+    button {
+      width: 70px;
+      height: 60px;
+      font-size: 35px;
+      background-color: #3B3B3B;
+      border: 1px solid #3B3B3B;
+      color: blueviolet;
+      margin-left: 2px;
+    }
+
+    button:hover {
+      background: #FF5454;
+      color: #ffffff;
+    }
+  }
+}

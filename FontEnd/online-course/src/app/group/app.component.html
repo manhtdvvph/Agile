@@ -1,0 +1,269 @@
+<div class="header_bg">
+
+    <div class="container">
+        <div class="row acount-menu">
+            <div class="logo navbar-left">
+                <h4><i class="fa fa-phone" aria-hidden="true"></i><span style=" margin-left: 5px;">Phone 0374186533
+                        ( Support time 7h to 22h )</span></h4>
+            </div>
+
+            <div class="acount navbar-right ">
+                <div id="conten">
+                    <div class="one-login">
+                        <button type="button" class="btn btn-success btn-md" id="myBtn">Login
+                        </button>
+                        <app-homepage-login></app-homepage-login>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-success btn-md" id="myBtn1">Resgistration</button>
+                        <app-homepage-resgistration></app-homepage-resgistration>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="row header">
+            <div class="logo navbar-left">
+                <h1><a href="index.html">Learner </a></h1>
+            </div>
+            <div class="h_search navbar-right">
+                <form>
+                    <input type="text" class="text" value="Enter text here" onfocus="this.value = '';"
+                        onblur="if (this.value == '') {this.value = 'Enter text here';}">
+                    <input type="submit" value="search">
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row h_menu">
+        <nav class="navbar navbar-default navbar-left" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a routerLink="/homepage" routerLinkActive="active">Home</a></li>
+                    <li><a routerLink="/introduce" routerLinkActive="active">Introlduce</a></li>
+                    <li><a routerLink="/free-courese" routerLinkActive="active">Free Cource</a></li>
+                    <li><a routerLink="/onlinecourse" routerLinkActive="active">Online Course</a></li>
+                    <li><a routerLink="/mycourse" routerLinkActive="active">My Cource</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+            <!-- start soc_icons -->
+        </nav>
+        <div class="soc_icons navbar-right">
+
+            <div class="list-unstyled text-center">
+                <button type="button" class="btn btn-success btn-md" id="myBtn2"><i class="fa fa-shopping-cart"
+                        aria-hidden="true"></i></button>
+                <app-cart></app-cart>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+<div class="main_btm">
+    <!-- start main_btm -->
+    <div class="container">
+        <div class="main row">
+            <div class="col-md-6 content_left">
+                <img src="assets/images/pic1.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-6 content_right">
+                <h4>Lorem Ipsum is simply <span>dummy text of the ornare </span> vulputate printing and There are
+                    many
+                    variations of passages.</h4>
+                <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered
+                    alteration in some form alteration in some form, by injected humour, or randomised words which
+                    don't look
+                    even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure
+                    there isn't
+                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                    Internet tend to
+                    repeat predefined chunks as necessary, making this the first true generator on the Internet. It
+                    uses a
+                    dictionary of over 200 Latin words. </p>
+                <a href="single-page.html" class="fa-btn btn-1 btn-1e">Add Cart</a>
+            </div>
+        </div>
+        <!----start-img-cursual---->
+        <div id="owl-demo" class="owl-carousel text-center">
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c1.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">vehicula diam</a></h4>
+                    <p>
+                        Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore
+                        magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c2.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Morbi nunc</a></h4>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c3.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Lorem ipsum</a></h4>
+                    <p>
+                        On the other hand, we denounce with righteous indignation and dislike men who are so
+                        beguiled pleasure of
+                        the moment,
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c4.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Sed faucibus</a></h4>
+                    <p>
+                        Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore
+                        magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c2.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Lorem ipsum</a></h4>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c3.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Lorem ipsum</a></h4>
+                    <p>
+                        On the other hand, we denounce with righteous indignation and dislike men who are so
+                        beguiled pleasure of
+                        the moment,
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c4.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">vehicula diam</a></h4>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c1.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Lorem ipsum</a></h4>
+                    <p>
+                        On the other hand, we denounce with righteous indignation and dislike men who are so
+                        beguiled pleasure of
+                        the moment,
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c2.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Lorem ipsum</a></h4>
+                    <p>
+                        Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore
+                        magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c3.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">vehicula diam</a></h4>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c1.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Lorem ipsum</a></h4>
+                    <p>
+                        On the other hand, we denounce with righteous indignation and dislike men who are so
+                        beguiled pleasure of
+                        the moment,
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cau_left">
+                    <img class="lazyOwl" data-src="assets/images/c4.jpg" alt="Lazy Owl Image">
+                </div>
+                <div class="cau_left">
+                    <h4><a href="#">Morbi nunc</a></h4>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!----//End-img-cursual---->
+    </div>
+</div>
+<div class="footer_bg">
+    <!-- start footer -->
+    <div class="container">
+        <div class="row  footer">
+            <div class="copy text-center">
+                <p class="link"><span>&#169; All rights reserved | Design by&nbsp;<a href="http://w3layouts.com/">
+                        </a></span></p>
+            </div>
+        </div>
+    </div>
+</div>

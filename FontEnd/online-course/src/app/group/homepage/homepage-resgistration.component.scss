@@ -1,0 +1,32 @@
+.modal-content{
+    width: 500px;
+    height: 650px;
+    margin: 0 auto;
+    .modal-header{
+    h4{
+        font-weight: 600;
+    }
+    .close{
+        margin-top: -35px;
+    }
+}
+    label{
+        font-size: 16px;
+        margin-left: 10px;
+        span{
+            color: red;
+        }
+    }
+    .button-login{
+   
+        height: 30px;
+        margin-left: 175px;
+        color: beige;
+        font-weight: 400;
+        font-size: 16px;
+        background: palegreen;
+    }
+    .button-login:hover{
+      background-color: orange;
+    }
+}

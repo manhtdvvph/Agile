@@ -1,0 +1,14 @@
+.modal-content{
+    height: 600px;
+    .cart{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 900px;
+        margin: 0 auto;
+        table{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+}
