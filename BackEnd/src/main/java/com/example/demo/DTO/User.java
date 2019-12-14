@@ -14,6 +14,7 @@ public class User{
 
     @Id
     @Column(name = "ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(name = "USER_CODE")
@@ -40,6 +41,9 @@ public class User{
     @Column(name = "ADDRESS")
     private String address;
 
+    @Column(name = "ROLE")
+    private String role;
+
     @Column(name = "STATUS")
     private Integer status;
 
@@ -47,6 +51,13 @@ public class User{
     public User() {
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 
     public Integer getId() {
         return id;

@@ -8,6 +8,7 @@ import java.util.List;
 public class Type {
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "code")
     private String code;

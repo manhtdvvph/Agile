@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { OnlinecourseComponent } from './onlinecourse/onlinecourse.component';
 import { MycourseComponent } from './mycourse/mycourse.component';
 import { EmbedVideo } from 'ngx-embed-video';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ModalModule } from 'ngb-modal';
 import { HomepageLoginComponent } from './homepage/homepage-login.component';
 import { HomepageResgistrationComponent } from './homepage/homepage-resgistration.component';
@@ -16,6 +16,9 @@ import { CartComponent } from './homepage/cart.component';
 import { HomepageAdminComponent } from './homepage-admin/homepage-admin.component';
 import { HomepageCreateComponent } from './homepage-admin/homepage-create.component';
 import { HomepageEditComponent } from './homepage-admin/homepage-edit.component';
+import { JWTInterceptor } from '../helpers/jwt.interceptor';
+import { ErrorInterceptor } from '../helpers/error.interceptor';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,9 +39,11 @@ import { HomepageEditComponent } from './homepage-admin/homepage-edit.component'
     EmbedVideo.forRoot(),
     HttpClientModule,
     ModalModule,
-
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JWTInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
