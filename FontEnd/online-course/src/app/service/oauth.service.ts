@@ -35,7 +35,9 @@ export class OauthService {
         };
 
         const creds = 'username=' + username + '&password=' + password + '&grant_type=password';
+        console.log(creds)
         return this.http.post<any>(this.url, creds, httpOptions).pipe(map(token => {
+            console.log(token)
             localStorage.setItem(config.session, JSON.stringify(token));
             if (token && token.access_token) {
                 var mUser: User = new User();

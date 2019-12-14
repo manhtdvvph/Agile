@@ -9,17 +9,14 @@ import { OauthService } from 'src/app/service/oauth.service';
   styleUrls: ['./homepage-login.component.scss']
 })
 export class HomepageLoginComponent implements OnInit {
-  user: User;
+  user: User = new User();
+  account:string = "";
   constructor(
     private userService: UserService,
     private oauth: OauthService
   ) { }
 
   ngOnInit() {
-    this.user = new User();
-    this.userService.getAll().subscribe(res =>{
-      console.log(res)
-    })
   }
   
   Login(){
